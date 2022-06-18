@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Chat App</title>
+  </head>
+  <body>
+    <section class="container">
+      <div>
+        <div class="header">
+          <h1 class="heading">Chat App</h1>
+          <button class="leave">Leave Room</button>
+        </div>
+        <hr />
+        <div class="content">
+          <div class="user">
+            <div class="room-div">
+              <h3 class="room-user">Room</h3>
+              <p class="room"></p>
+            </div>
+            <div class="user-div">
+              <h3 class="room-user">Users</h3>
+              <ul id="users"></ul>
+            </div>
+          </div>
+          <div class="chat">
+            <div class="message"></div>
+          </div>
+        </div>
+        <form id="chat-form">
+          <div class="submit">
+            <input type="text" name="message" id="msg" />
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
