@@ -45,8 +45,6 @@ chatForm.addEventListener('submit', (e) => {
 })
 
 function outPutMessage(message) {
-  console.log(typeof username)
-  console.log(typeof message.username)
   const div = document.createElement('div')
   div.classList.add(
     `${
@@ -74,3 +72,11 @@ function outputUsers(users) {
   ${users.map((user) => `<li>${user.username}</li>`).join('')}
   `
 }
+
+document.getElementById('leave-btn').addEventListener('click', () => {
+  const leaveRoom = confirm('Are you sure you want to leave the chatroom?')
+  if (leaveRoom) {
+    window.location = '../index.html'
+  } else {
+  }
+})

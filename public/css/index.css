@@ -119,6 +119,10 @@ ul {
   font-size: 1em;
   cursor: pointer;
 }
+.login {
+  display: flex;
+  justify-content: center;
+}
 .login-form {
   background-color: var(--background);
   display: grid;
@@ -203,21 +207,23 @@ ul {
   .container {
     border-radius: 5px;
     padding: 20px 10px;
-    margin: 20px 2%;
+    margin: 0 0;
     max-width: 100%;
+    height: 100vh;
   }
   .chat {
     flex: none;
+    height: 70vh;
   }
   .content {
     flex-direction: column;
     display: flex;
   }
   .message {
-    min-width: 90%;
+    min-width: 80%;
   }
   .message-user {
-    margin-left: 5%;
+    margin-left: 10%;
   }
   .room-div {
     flex: 2;
