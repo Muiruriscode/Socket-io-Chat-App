@@ -4,14 +4,19 @@ const leave = document.querySelector('.leave')
 const roomName = document.querySelector('.room')
 const userList = document.querySelector('#users')
 
-const random = Math.ceil(Math.random() * 10)
+// const random = Math.ceil(Math.random() * 10)
 
 // leave.addEventListener('click', () => {
 
 // })
 
-const username = random
-const room = 'Python'
+const { username, room } = Qs.parse(location.search, {
+  ignoreQueryPrefix: true,
+})
+
+console.log(username, room)
+// const username = random
+// const room = 'Python'
 
 const socket = io()
 
