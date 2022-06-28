@@ -14,6 +14,8 @@ This is a chat app thet has been implemented using socket.io. Socket io implemen
 1. The app aly allows users to join a certain number of rooms
 2. The data is stored in an array hence can only be accessed when the user logs into the app. Database access features can be added to the app.
 
+![chat App](https://github.com/Muiruriscode/Socket-io-Chat-App/blob/main/public/chat.png)
+
 ## Express setup
 
 Install express
